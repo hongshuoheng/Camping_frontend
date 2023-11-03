@@ -1,0 +1,136 @@
+.p_bookmark_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.p_bookmark_content>div {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px 20px;
+}
+
+.trashcan {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  color: azure;
+}
+
+.article_card {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px #666666 solid;
+
+}
+
+.article_card_inner{
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 22px;
+  box-sizing: border-box;
+}
+
+.article_img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}
+
+.article_content {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.article_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-Bottom: 12px;
+}
+
+.article_text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+}
+
+.article_author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.article_author_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-Bottom: 4px;
+}
+
+.article_icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 18px;
+  font-size: 18px;
+}
+.openReply{
+  text-decoration: underline;
+  text-align: center;
+  color: #666666;
+  cursor: pointer;
+}
+.article_reply_card {
+width: calc(100% - 150px);
+  margin-left: 120px;
+  min-height: 120px;
+  background-color: #CCC;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.article_reply_content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+} 
+.article_reply_del{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+.article_reply_time{
+  font-size: 12px;
+} 
+.article_reply_username{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+} 
+
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 60px
+}

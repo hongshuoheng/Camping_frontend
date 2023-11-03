@@ -1,0 +1,45 @@
+.pageHeadingContainer {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 99;
+}
+
+
+.slideControl {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-end;
+  color: white;
+}
+
+.currentPage,
+.totalPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  padding: 0px 24px;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5px;
+  width: 200px;
+  background-color: white;
+  text-align: center;
+}
+
+.progressBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  color: rgb(181, 181, 181);
+}

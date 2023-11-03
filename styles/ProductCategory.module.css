@@ -1,0 +1,67 @@
+.flexContainer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  height: 100%;
+  background-color: #e8e8e8;
+  gap: 0px 150px;
+  margin-left: 220px;
+  top: 0;
+  opacity: 0.97;
+}
+.catTitle {
+  margin-left: 280px;
+  position: fixed;
+  z-index: 5;
+  margin-top: 32px;
+  top: 0;
+  font-size: 32px;
+}
+
+.viewAllBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 600px;
+  letter-spacing: 4px;
+  text-align: center;
+  border: 2px solid #333;
+  font-size: 20px;
+  margin: 0px 20px;
+  margin-bottom: 48px;
+  color: #333;
+}
+.viewAllBtn:hover {
+  background-color: #333;
+  color: #e8e8e8;
+  opacity: 0.95;
+  transition: 0.3s;
+}
+
+.catCard {
+  width: 335px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 20px;
+}
+.catCard:hover {
+  opacity: 0.7;
+  transition: 0.3;
+}
+
+.catImg {
+  width: 335px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.catName {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #333;
+}

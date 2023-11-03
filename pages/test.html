@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Rubik+Microbe&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/globals.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/member.css" />
+  <link rel="stylesheet" href="../styles/m2.css" />
+  <link rel="stylesheet" href="../styles/m3.css" />
+</head>
+
+<body>
+  <section class="main_section">
+    <div>
+      <div class="section_content">
+        <div class="nav_logo">
+          <div class="title_box">
+            <p>LOGO</p>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav_page">
+            <li><a href="#">商品</a></li>
+            <li><a href="#">營地</a></li>
+            <li><a href="#">討論區</a></li>
+            <li><a href="#">活動</a></li>
+            <li><a href="#">常見問答</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="nav_member">
+            <li><a href="#">登入</a></li>
+            <li><a href="#">註冊</a></li>
+            <li><a href="#">購物車</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div>
+      <div class="main_title">
+        <div class="content_title">
+          <div class="title_box">
+            <p>這是內文標題</p>
+          </div>
+        </div>
+        <div class="bread">這是麵包屑/屑屑01</div>
+      </div>
+      <div class="main_content">
+        <div class="content">
+          <!-- 以下測試區 -->
+          <div class="bookmark_content">
+            <div class="bookmark_nav_bar">
+              <div class="bookmark_nav">產品</div>
+              <div class="bookmark_nav">營地</div>
+              <div class="bookmark_nav">文章</div>
+              <div class="bookmark_nav">活動</div>
+            </div>
+            <div class="bookmark_content"></div>
+          </div>
+
+
+          <!-- 以上測試區 -->
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="menu">
+    <div class="search_bar">
+      <input type="text" />
+      <span>search</span>
+    </div>
+    <div class="menu_utility">
+      <ul>
+        <li>
+          <span onclick="document.querySelectorAll('.menu_inner')[0].classList.toggle('menu_inner_hide')">商品</span>
+          <ul class="menu_inner">
+            <li><a href="">帳篷</a></li>
+            <li><a href="">服飾</a></li>
+            <li><a href="">寵物用品</a></li>
+            <li><a href="">戶外折疊傢俱</a></li>
+            <li><a href="">野炊用具</a></li>
+          </ul>
+        </li>
+        <li>
+          <span onclick="document.querySelectorAll('.menu_inner')[1].classList.toggle('menu_inner_hide')">營地</span>
+          <ul class="menu_inner">
+            <li><a href="">北區</a></li>
+            <li><a href="">中西區</a></li>
+            <li><a href="">南區</a></li>
+            <li><a href="">東區</a></li>
+          </ul>
+        </li>
+        <li><a href="#">討論區</a></li>
+        <li><a href="#">活動</a></li>
+        <li><a href="#">常見問答</a></li>
+      </ul>
+    </div>
+    <div class="menu_member">
+      <ul>
+        <li><a href="#">登入</a></li>
+        <li><a href="#">註冊</a></li>
+        <li><a href="#">購物車</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="menu_btn" onclick="document.querySelector('.menu').classList.toggle('menu_hide');">
+    <span style="margin-top: 0; background-color:white" class="menu_icon_line"></span>
+    <span style="background-color:white" class="menu_icon_line"></span>
+  </div>
+</body>
+
+</html>

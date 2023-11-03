@@ -1,0 +1,60 @@
+/* 天氣卡片 */
+.iconSZ {
+  width: 80px;
+  height: 80px;
+  margin: 8px 0;
+}
+
+.iconSZ2 {
+  width: 20px;
+  height: 20px;
+  margin: 8px 10px 0;
+  /* margin-right: 10px; */
+  /* display: flex;
+  align-items: center; */
+}
+.iconHorizontal {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 4px;
+}
+.weatherArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  /* border: #000 1px solid; */
+  margin: 12px 0;
+  gap: 1em;
+  border: 1px solid black;
+}
+.weatherArea div {
+  margin: 4px 0;
+}
+.weatherPad {
+  padding: 12px;
+  margin: 12px;
+}
+@media screen and (max-width: 1000px) {
+  .weatherArea {
+    flex-wrap: wrap;
+    /* justify-content: start; */
+  }
+  .iconSZ2 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .weatherArea {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .iconSZ2 {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  gap: 80px;
+  color: #333;
+  position: absolute;
+  background-color: #e8e8e8;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  opacity: 1;
+  transition: opacity 0.5s;
+  right: 0;
+}
+.containerHide {
+  opacity: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title {
+  display: flex;
+  font-size: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  padding: 8px 0px;
+  border-bottom: 1.5px solid #9f9f9f;
+  cursor: pointer;
+}
+
+.itemType {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  padding: 8px 0px;
+  border-bottom: 1.5px solid #9f9f9f;
+  color: #9f9f9f;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,85 @@
+.calendar {
+  /* border-radius: 4px; */
+  border: 1px solid #eee;
+  gap: 1em;
+  display: flex;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 10px;
+  border-bottom: 1px solid #eee;
+}
+.current_month {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.prev_month {
+}
+.next_month {
+}
+.disabled {
+  color: #ddd;
+  cursor: default;
+}
+
+.icons {
+  font-size: 2rem;
+}
+.table_wrapper {
+  position: relative;
+}
+.date_table {
+  width: 100%;
+  padding: 5px;
+  border-collapse: separate;
+  table-layout: fixed;
+}
+.row_day {
+  text-align: center;
+}
+.cell_day {
+  padding: 10px 0 20px;
+  text-align: center;
+  color: #666;
+  font-weight: 700;
+}
+.row_date {
+  text-align: center;
+}
+.cell_date {
+  position: relative;
+  padding: 8px 4px;
+  border-radius: 6px;
+  text-align: center;
+  user-select: none;
+}
+.cell_date.selectable {
+  cursor: pointer;
+}
+.cell_date.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+  background-color: transparent;
+}
+.cell_date.disabled .date_num {
+  text-decoration: line-through;
+}
+.cell_date .date_num {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.option-booking .cell-date .price {
+  min-height: 20px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* # 手機版樣式  */
+/* iPhone 8 (375px) */
+@media screen and (max-width: 375px) {
+}

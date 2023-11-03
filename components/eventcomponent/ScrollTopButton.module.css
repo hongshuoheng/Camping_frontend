@@ -1,0 +1,37 @@
+/* ScrollTopButton.css */
+
+.scroll-top-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+.scroll-top-wrapper.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrolltopbutton {
+  /* Your button styles go here */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  opacity: 0.6;
+  font-size: 40px;
+  cursor: "pointer";
+}
+.scrolltopbutton:hover {
+  background-color: #ffffff;
+  color: black;
+  opacity: 1;
+}
+.button {
+  font-size: "40px";
+  color: #999;
+  background-color: "#fff";
+}

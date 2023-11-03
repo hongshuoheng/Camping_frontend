@@ -1,0 +1,76 @@
+/* 圖片區塊 */
+.mainScope {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-self: stretch;
+  padding: 0px 30px;
+}
+/* 文字區塊 */
+.secondScope {
+  display: flex;
+  height: 440px;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10;
+  justify-content: space-between;
+}
+/* 文字區塊 h1 */
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-bottom: 20px;
+}
+/* 文字區塊 p */
+.p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+/* 文字區塊 地址 營業時間 */
+.p2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+/* 文字區塊 icon  */
+.iconP {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7px;
+}
+/* 各區域連結排版 */
+.linkScopeMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 200px;
+}
+.linkScope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linkScope a {
+  margin: 8px 0;
+  font-size: 22px;
+  display: block;
+  width: 100px;
+}
+.FindYourShop {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  margin-left: 100px;
+  /* max-width: 40%; */
+}

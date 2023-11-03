@@ -1,0 +1,107 @@
+.bar {
+  display: flex;
+  font-size: 28px;
+}
+
+.span {
+  font-size: 32px;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+.cardArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.mySwiper .swiper-pagination {
+  position: absolute;
+  bottom: 0px; /* 調整底部距離 */
+  left: 50%;
+  transform: translateX(-50%); /* 使 pagination 在水平方向上置中 */
+}
+.cardArea1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.line {
+  display: flex;
+  padding: 20px 0px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.line1 {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.copy {
+  display: none;
+}
+.iconB {
+  position: absolute;
+  bottom: 47%;
+  right: 8.9%;
+  font-size: 16px;
+  background-color: #fff;
+  color: red;
+  z-index: 1;
+  padding: 4px;
+}
+.iconScope {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  right: 0;
+}
+.button {
+  border: 1px solid #9f9f9f;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: black;
+  padding: 11px 35px;
+  margin-top: 20px;
+}
+.button:hover {
+  background-color: #d7d5d5;
+  opacity: 1;
+  transition: 0.2s;
+}
+@media screen and (max-width: 650px) {
+  .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  .cardArea {
+    display: none;
+  }
+  .cardArea1 {
+    display: none;
+  }
+  .iconB {
+    position: absolute;
+    bottom: 47.5%;
+    right: 7%;
+    font-size: 16px;
+    background-color: #fff;
+    color: red;
+    z-index: 1;
+    padding: 4px;
+  }
+  .iconScope {
+    position: relative;
+    display: inline-block;
+  }
+}

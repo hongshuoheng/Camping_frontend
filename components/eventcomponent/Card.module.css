@@ -1,0 +1,202 @@
+.cardScope {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* margin-left: 60px; */
+  padding-top: 10px;
+}
+.iconR {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #d7d5d5;
+  margin: 8px;
+  z-index: 1;
+}
+.iconH {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #f50101;
+  margin: 8px;
+  z-index: 1;
+}
+.card {
+  width: 20rem;
+  /* border: 1px solid black; */
+  padding-bottom: 8px;
+  height: 22rem;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  /* background-color: lightblue; */
+}
+.card:hover {
+  opacity: 0.85;
+  background: color #fff;
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    0 0 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.iconScope {
+  position: relative;
+  display: inline-block;
+}
+
+.iconB {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  background-color: #fff;
+  color: red;
+}
+.iconL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: white;
+
+  margin: 8px;
+}
+.iconML {
+  margin-right: 4px;
+}
+.imgP {
+  /* max-height: 100%;
+  max-width: 100%; */
+  width: 20rem;
+  height: 17.5rem;
+  display: block;
+}
+
+.imgQ {
+  width: 20rem;
+  height: 17.5rem;
+  display: block;
+}
+.cardBody {
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.imgcontainer {
+  position: relative;
+}
+.imgfull {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px 30px;
+  line-height: 1;
+  color: white;
+  z-index: 1;
+  border: 6px solid white;
+  top: 110px;
+  left: 40px;
+  position: absolute;
+  letter-spacing: 20px;
+  transform: rotate(-18deg);
+}
+@media screen and (max-width: 650px) {
+  .cardScope {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 22rem;
+    /* border: 1px solid black; */
+    padding: 8px;
+    height: 25rem;
+    overflow: hidden;
+
+    /* background-color: lightblue; */
+  }
+  .card:hover {
+    background-color: #d7d5d5;
+    opacity: 1;
+    transition: 0.2s;
+  }
+
+  .iconScope {
+    position: relative;
+    display: inline-block;
+  }
+  .imgQ {
+    width: 22rem;
+    height: 20.8rem;
+    display: block;
+    display: block;
+  }
+  .iconR {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #d7d5d5;
+    margin: 8px;
+  }
+  .iconB {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    background-color: #fff;
+    color: red;
+  }
+  .iconL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: white;
+
+    margin: 8px;
+  }
+  .iconML {
+    margin-right: 4px;
+  }
+  .imgP {
+    /* max-height: 100%;
+  max-width: 100%; */
+    width: 22rem;
+    height: 20.8rem;
+    display: block;
+  }
+  .cardBody {
+    margin: 4px;
+    padding: 4px;
+  }
+  .iconH {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #f50101;
+    margin: 8px;
+    z-index: 1;
+  }
+  .imgfull {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 40px;
+    line-height: 1;
+    color: white;
+    z-index: 1;
+    border: 6px solid white;
+    top: 120px;
+    left: 50px;
+    position: absolute;
+    letter-spacing: 20px;
+    transform: rotate(-27deg);
+  }
+}

@@ -1,0 +1,39 @@
+.bgc {
+  background-color: rgba(0, 0, 0, 0.753);
+  padding: 12px 24px;
+}
+.bgc * {
+  color: whitesmoke;
+}
+.bgc li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  font-size: 48px;
+}
+.listScope {
+  max-width: 20%;
+  /* color: whitesmoke; */
+}
+.itemScope {
+  margin-bottom: 14px;
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  /* color: whitesmoke; */
+}
+.item {
+  margin-top: 13px;
+  /* color: whitesmoke; */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding: 10px 24px;
+  /* color: whitesmoke; */
+}

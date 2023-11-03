@@ -1,0 +1,85 @@
+.history_content {
+  width: 100%;
+  box-sizing: border-box
+}
+.history_event{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  gap: 10px;
+}
+.history_thead {
+  width: 100%;
+  padding: 8px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  background-color: var(--color-base-b);
+  color: var(--color--less-w);
+}
+.history_thead>div,
+.history_tbody>div{
+padding-left: 16px;
+box-sizing: border-box;
+}
+.history_tbody {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 0;
+  box-sizing: border-box;
+border-bottom: 2px solid var(--color-base-b);
+  color: var(--color-base-b);
+}
+
+.history_date {
+  width: 20%;
+}
+
+.history_price {
+  width: 20%;
+}
+.history_total_price {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  box-sizing: border-box;
+  
+}
+.history_paymeny_time{
+  font-size: 14px;
+  font-weight:300;
+
+}
+.history_product {
+  width: 45%;
+}
+
+.history_payment {
+  width: 15%;
+}
+.history_tbody .history_date{
+  display: flex;
+  align-items: center;
+  
+}
+.history_tbody .history_price{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.history_tbody .history_product{
+  display: flex;
+  flex-direction: column;
+}
+.history_tbody .history_payment{
+  display: flex;
+  align-items: center;
+}

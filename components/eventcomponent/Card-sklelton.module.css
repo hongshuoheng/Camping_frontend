@@ -1,0 +1,161 @@
+.cardScope {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.iconR {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #d7d5d5;
+  margin: 8px;
+  z-index: 1;
+}
+.iconH {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #f50101;
+  margin: 8px;
+  z-index: 1;
+}
+.card {
+  width: 20rem;
+  /* border: 1px solid black; */
+  padding-bottom: 8px;
+  height: 22rem;
+  overflow: hidden;
+
+  /* background-color: lightblue; */
+}
+
+.iconScope {
+  position: relative;
+  display: inline-block;
+}
+
+.iconB {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  background-color: #fff;
+  color: red;
+}
+.iconL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: white;
+  width: 20rem;
+  margin: 8px;
+  height: 22rem;
+}
+.iconML {
+  margin-right: 4px;
+}
+.icong {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgP {
+  /* max-height: 100%;
+  max-width: 100%; */
+  width: 20rem;
+  height: 17.5rem;
+  display: block;
+}
+.cardBody {
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.imgcontainer {
+  position: relative;
+}
+.imgfull {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px 30px;
+  line-height: 1;
+  color: white;
+
+  border: 6px solid white;
+  top: 110px;
+  left: 40px;
+  position: absolute;
+  letter-spacing: 20px;
+  transform: rotate(-27deg);
+}
+@media screen and (max-width: 650px) {
+  .cardScope {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 22rem;
+    border: 1px solid black;
+    padding: 8px;
+    height: 25rem;
+    overflow: hidden;
+
+    /* background-color: lightblue; */
+  }
+  .card:hover {
+    background-color: #d7d5d5;
+    opacity: 1;
+    transition: 0.2s;
+  }
+
+  .iconScope {
+    position: relative;
+    display: inline-block;
+  }
+  .iconR {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    color: #d7d5d5;
+    margin: 8px;
+  }
+  .iconB {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    background-color: #fff;
+    color: red;
+  }
+  .iconL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: white;
+
+    margin: 8px;
+  }
+  .iconML {
+    margin-right: 4px;
+  }
+  .imgP {
+    /* max-height: 100%;
+  max-width: 100%; */
+    width: 22rem;
+    height: 20.8rem;
+    display: block;
+  }
+  .cardBody {
+    margin: 4px;
+    padding: 4px;
+  }
+}

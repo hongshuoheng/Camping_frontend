@@ -1,0 +1,243 @@
+.flex_center_row{
+    display: flex;
+    justify-content: center;
+}
+.flex_center_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.member_content {
+    width: 100%;
+}
+
+.login_content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.register_content {
+    width: 75%;
+}
+.forget_password_content{
+    width: 500px;
+}
+
+.member_form {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 48px;
+    font-size: var(--text-l);
+}
+
+.member_form_body {
+    width: 100%;
+    flex-grow: 2;
+}
+
+.member_title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: var(--text-xl);
+}
+
+.member_address_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+
+.member_radio_input {
+    width: 30px;
+    height: 30px;
+}
+
+.member_radio_label {
+    width: 100px;
+    box-sizing: border-box;
+    margin-left: 12px;
+    font-size: var(--text-l);
+}
+.member_radio_box{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+}
+.member_input_box {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    /* height: max-content; */
+    margin-bottom: 4px;
+}
+
+.member_select_box {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.member_select {
+    width: 100%;
+}
+.member_select select,input.member_select{
+    margin-right: 24px;
+    padding: 12px;
+    width: 100%;
+     font-size: var(--text-l);
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--color-base-b);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.member_select:focus {
+    background-color: var(--color-pure-w);
+    border: 2px solid var(--color-base-b);
+}
+
+.valid_msg_select {
+    /* height: 16px; */
+    font-size: var(--text-sm);
+    color: #ee0000;
+}
+
+
+.member_label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 120px;
+    font-size: var(--text-l);
+}
+
+.member_input {
+    font-size: var(--text-l);
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--color-base-b);
+    outline: none;
+    box-sizing: border-box;
+    padding: 8px;
+    width: 100%;
+}
+
+.member_input:focus {
+    background-color: var(--color-pure-w);
+    border: 2px solid var(--color-base-b);
+}
+
+.member_input_psw {
+    padding-right: 47px;
+}
+
+.member_input_psw[type="password"] {
+    letter-spacing: -10px;
+}
+
+.psw_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    right: 0px;
+}
+
+.valid_msg {
+    width: 100%;
+    height: 16px;
+    padding-left: 120px;
+    font-size: var(--text-sm);
+    color: #ee0000;
+}
+
+.forget_password {
+    padding-left: 120px;
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 18px;
+
+}
+
+.member_btn {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 32px;
+    padding: 12px 0;
+    background-color: var(--color-base-b);
+    color: var(--color--less-w);
+    font-size: var(--text-md);
+}
+.member_btn:hover{
+    background-color: var(--color-less-b);
+    color: var(--color--less-w);
+    border-color: var(--color--gray);
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .register_content {
+        width: 100%;
+    
+    }
+    .member_input_box {
+        display: block;
+        min-height: 16px;
+    }
+
+    .member_label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .member_input {
+        width: 100%;
+    }
+
+    .forget_password {
+        padding-left: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .member_title {
+
+        font-size: var(--text-xxl);
+    }
+
+    .member_form {
+        padding: 48px 8px;
+        display: block;
+        font-size: var(--text-md);
+    }
+
+    .login_content {
+        display: block;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,44 @@
+.photo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  object-fit: cover;
+}
+
+.slideHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  color: white;
+  margin-bottom: 80px;
+  position: absolute;
+  z-index: 5;
+  right: 40px;
+  bottom: 200px;
+  width: 600px;
+}
+.slideHeadingContainer:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.subHeading {
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.mainHeading {
+  font-size: 42px;
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 400px;
+}

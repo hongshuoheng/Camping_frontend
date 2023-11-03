@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 12px;
+  gap: 80px;
+}
+
+.cardContainer {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 320px;
+  min-height: 400px;
+  margin-bottom: 40px;
+}
+
+.cardContainer:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.photo {
+  display: flex;
+  object-fit: cover;
+  width: 320px;
+  height: 400px;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.trashcan {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  color: azure;
+}
+
+.tag {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.discountTag {
+  background-color: #da190f;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.pTitle {
+  font-size: 14px;
+  margin-top: 8px;
+  letter-spacing: 0.2px;
+}
+
+.price {
+  font-size: 14px;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+.discountPrice {
+  font-size: 14px;
+  align-self: flex-start;
+  color: #da190f;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.strikeThrough {
+  font-size: 14px;
+  align-self: flex-start;
+  text-decoration: line-through;
+}
+
+.filterContainer {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+.productFilter {
+  margin-right: auto;
+  text-align: center;
+}
+
+.pCatFilter {
+  display: flex;
+  margin-right: 28px;
+  align-items: center;
+  border-bottom: 1.5px solid transparent;
+  cursor: pointer;
+}
+
+.pCatFilterOn {
+  display: flex;
+  margin-right: 28px;
+  align-items: center;
+  border-bottom: 1.5px solid #333;
+  transition: border-color 0.5s;
+  cursor: pointer;
+}
+
+.pOrderBy {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid transparent;
+  cursor: pointer;
+}
+.pOrderBy:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.pCatFilter:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.pOrderByOn {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #333;
+  transition: border-color 0.5s;
+}
+
+.addRotate {
+  transform: rotateZ(45deg);
+}
+
+.normal {
+  transition: transform 0.5s;
+}
+
+/* .filterComponent {
+  width: 100px;
+  height: 600px;
+  background-color: salmon;
+} */
+
+@media screen and (max-width: 376px) {
+  .container {
+    gap: 8px;
+    justify-content: space-evenly;
+  }
+  .photo {
+    height: 200px;
+    width: 100%;
+  }
+
+  .cardContainer {
+    width: 150px;
+    height: 200px;
+    margin-top: 12px;
+    min-height: 250px;
+  }
+  .pTitle {
+    font-size: 8px;
+    margin-top: 8px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .filterContainer {
+    font-size: 16px;
+  }
+
+  .tag {
+    background-color: #333;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    margin-left: 4px;
+    margin-top: 4px;
+    font-size: 4px;
+  }
+}
